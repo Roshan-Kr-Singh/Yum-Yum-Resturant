@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Necessary setup for Bootstrap -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	  rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	  crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous" defer ></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	    crossorigin="anonymous" defer ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+
+    <title>Yum Yum Resturant</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="home">
+      <div class="container">
+	<!-- Navbar Brand -->
+        <a class="navbar-brand" href="#">
+	  <img src="./img/logo.jpg" alt="" style="height: 70px; width: 150px;">
+	      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav m-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">
+                Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chef">Our Chef</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-7 pt-5 text-center">
+            <h1 class="pt-5">real. good. food.</h1>
+            <button class="btn1 mt-3" id="main-show-hide-btn">Read More</button>
+	    <p class="lead p-5" id="main-description">
+        <em><b>For us meal time is more than food-it's about connection and sharing love. </b></em>Our sincere effort is to make your dining experience memorable by bringing to you centuries old Cuisine, and recipes from our mother’s kitchen.We specialize in Indian breads(Naan), meats grilled in tandoor, variety of curries,and biryani.We provide an excellent choice of various exotic vegetables, lentils, breads, aromatic rice, meat and much more.
+	    </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new" id="gallery">
+      <div class="container py-5">
+        <div class="row pt-5 m-auto text-center">
+          <h1>Gallery</h1>
+          <div class="col-lg-11 m-auto">
+            <div class="row text-center">
+              <div class="col-lg-4">
+                <img src="./img/g1.jpg" class="img-fluid' alt="">
+              </div>
+              <div class=" col-lg-4">
+                <img src="./img/g2.jpg" class="img-fluid' alt="">
+              </div>
+              <div class=" col-lg-4">
+                <img src="./img/g3.jpg" class="img-fluid' alt="">
+              </div>
+              <div class=" col-lg-4">
+                <img src="./img/g4.jpg" class="img-fluid' alt="">
+              </div>
+              <div class=" col-lg-4">
+                <img src="./img/g5.jpg" class="img-fluid' alt="">
+              </div>
+              <div class=" col-lg-4">
+                <img src="./img/g6.jpg" class="img-fluid' alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" shop" id="menu">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-8 m-auto text-center">
+            <h1>Menu</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m1.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Pizza</h6>
+            <p>$99.6</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m2.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Burger</h6>
+            <p>$83</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m3.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Mix Chowmin</h6>
+            <p>$79.9</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m4.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Masala Dosa</h6>
+            <p>$78.1</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m5.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Idli </h6>
+            <p>$78</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m6.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Potato Chilli</h6>
+            <p>$30</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m7.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Chicken Wings</h6>
+            <p>$99</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m8.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Combo Pack (Burger+ French Fries)</h6>
+            <p>$120</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m9.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Indian Thali</h6>
+            <p>$92</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m10.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Fried Chicken </h6>
+            <p>$119.2</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m11.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>French Fries</h6>
+            <p>$79</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img src="./img/m12.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <h6>Continental Food</h6>
+            <p>$130</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product" id="chef">
+      <div class="container py-5">
+        <div class="row py-5 ">
+          <div class="col-lg-5 m-auto text-center">
+            <h1>Our Chef's</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-body">
+                  <img src="./img/s1.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <h5>Vikash Khanna</h5>
+              <p style="text-align: justify; font-size: 14px;">Vikas Khanna is an Indian
+                chef, restaurateur, cookbook
+                writer, filmmaker and humanitarian. He is one of the judges of Star Plus
+                series MasterChef India. He
+                is based in New York City.</p>
+            </div>
+            <div class="col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-body">
+                  <img src="./img/s2.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <h5>Sanjeev Kapoor</h5>
+              <p style="text-align: justify; font-size: 14px;">Sanjeev Kapoor is a famous
+                Indian celebrity chef,
+                entrepreneur and television personality. Kapoor hosted the popular TV
+                show Khana Khazana, the
+                longest running show of its kind in Asia.</p>
+            </div>
+            <div class="col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-body">
+                  <img src="./img/s3.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <h5>Ranveer Brar</h5>
+              <p style="text-align: justify; font-size: 14px;">Ranveer Singh Brar is an
+                Indian celebrity chef,
+                Television & digital celebrity, Masterchef India judge, author,
+                restaurateur, food film producer and
+                benefactor.</p>
+            </div>
+            <div class="col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-body">
+                  <img src="./img/s4.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <h5>Nita Mehta</h5>
+              <p style="text-align: justify; font-size: 14px;">Nita Mehta is an Indian
+                celebrity chef, author,
+                restaurateur and media personality, known for her cookbooks, cooking
+                classes and as a celebrity
+                judge on cooking based television shows.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 text-center m-auto">
+            <button class="btn1"><a href="https://en.wikipedia.org/wiki/List_of_Indian_chefs" style="color: white; font-weight: bold; text-decoration: none;">Click For More</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="reviews">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-8 m-auto text-center">
+            <h1>Reviews</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="./img/r1.jpg" class="img-fluid mb-3" alt="">
+            <h5>Absolutely Delicious!!</h5>
+            <p>Good Quality food in very cheap rates.</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="./img/r2.jpg" class="img-fluid mb-3" alt="">
+            <h5>The Food is Excellent</h5>
+            <p>The food is excellent, generous portions and great prices. The service was fast and friendly.</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="./img/r3.jpg" class="img-fluid mb-3" alt="">
+            <h5>The Food is Always Delicious!</h5>
+            <p>The food is always delicious and the service was also very good.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-lg-6 text-center m-auto">
+          <button class="btn1"><a href="https://www.fairwaycapecod.com/about-us/customer-reviews/" style="color: white; font-weight: bold; text-decoration: none;">Show More</a></button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact py-5" id="contact">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-5 m-auto text-center">
+            <h1>Contact Us</h1>
+            <h6 style="color: red;">Always Be In Touch With Us</h6>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-lg-9 m-auto ">
+            <div class="row">
+              <div class="col-lg-4">
+                <h6>LOCATION</h6>
+                <p>Lajpat Nagar New Delhi</p>
+
+                <h6>PHONE</h6>
+                <p>057262-28992</p>
+
+                <h6>EMAIL</h6>
+                <p>roshankrxxxxxx@gmail.com</p>
+              </div>
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input
+		      id="cf-first-name"
+		      type="text"
+		      class="form-control bg-light"
+		      placeholder="First Name"
+		      required>
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+		      id="cf-last-name"
+		      type="text"
+		      class="form-control bg-light"
+		      placeholder="Last Name"
+		      required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 py-3">
+                    <textarea
+		      id="cf-message"
+		      class="form-control bg-light"
+		      placeholder="Enter Here"
+		      cols="10"
+          rows="5">
+		    </textarea>
+                  </div>
+                </div>
+                <button id="cf-submit-btn" class="btn1">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+<!-- Footer Section -->
+    <section class="news py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-11 m-auto">
+            <div class="row">
+              <div class="col-lg-3 py-3">
+                <h5 class="pb-3">CUSTOMER CARE</h5>
+                <p style="cursor: pointer;">Regular</p>
+                <p style="cursor: pointer;">On Time</p>
+                <p style="cursor: pointer;">Always Care</p>
+              </div>
+              <div class="col-lg-3 py-3">
+                <h5 class="pb-3">FOR FOODIES</h5>
+                <p style="cursor: pointer;">Code of Conduct</p>
+                <p style="cursor: pointer;">Community</p>
+                <p style="cursor: pointer;">Blogger Help</p>
+              </div>
+              <div class="col-lg-3 py-3">
+                <h5 class="pb-3">FOR YOU</h5>
+                <p style="cursor: pointer;">Privacy</p>
+                <p style="cursor: pointer;">Terms</p>
+                <p style="cursor: pointer;">Security</p>
+              </div>
+              <div class="col-lg-3 py-3">
+                <h5 class="pb-3">SOCIAL LINKS</h5>
+                <span><i class="fab fa-facebook"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-google-plus"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center">Copyright 2021 All rights reserved | Roshan Kumar</p>
+      </div>
+    </section>
+
+    <!-- Ghost button -->
+    <button type="button"
+	    id="ghost-btn"
+	    data-bs-toggle="modal"
+	    data-bs-target="#success-modal"
+    > </button>
+
+    <!-- Success Modal -->
+    <div class="modal fade"
+	 id="success-modal"
+	 tabindex="-1"
+	 aria-labelledby="modalLabel"
+	 aria-hidden="true">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Thank You!</h5>
+            <button type="button"
+		    class="btn-close"
+		    data-bs-dismiss="modal"
+		    aria-label="Close">
+	    </button>
+	  </div>
+	  <div class="modal-body">
+	    Message sent successfully!
+	  </div>
+	  <div class="modal-footer">
+            <button type="button"
+		    class="btn btn-success"
+		    data-bs-dismiss="modal"
+	    >
+	      OK
+	    </button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+  </body>
+</html>
